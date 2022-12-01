@@ -1,0 +1,17 @@
+<p>listar productos</p>
+
+
+<table>
+    <tr>
+        <th>Código</th>
+        <th>Tipo</th>
+        <th>Dirección</th>
+        <th>Metros</th>
+    </tr>
+    <tr *ngFor="let c of casas | async">
+        <td>{{c.code}}</td>
+        <td>{{c.tipo}}</td>
+        <td>{{c.direccion}}</td>
+        <td>{{c.metros}}</td>
+    </tr>
+</table>
